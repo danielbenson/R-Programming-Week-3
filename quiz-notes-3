@@ -29,7 +29,8 @@ summary.data.frame(mtcars)
 ## 11 car-specific variables, with 32 observations.
 ## From the set we just described, we want to look at a few functions 
 ## that provide a relationship between average miles per gallon and number of 
-## cylinders. You may remember plotting this from the swirl exercise.
+## cylinders. You may remember plotting this from the swirl exercise with
+## "boxplot(mpg~cyl,data = mtcars)".
 tapply(mtcars$mpg, mtcars$cyl, mean)
 sapply(split(mtcars$mpg, mtcars$cyl), mean)
 with(mtcars, tapply(mpg, cyl, mean))
